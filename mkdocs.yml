@@ -1,0 +1,73 @@
+site_name: blog of devdede
+site_description: 记录学习、实践与思考的个人博客与知识库
+site_url: !ENV [SITE_URL, 'http://127.0.0.1:8000/']
+use_directory_urls: true
+theme:
+  name: material
+  language: zh
+  font: false
+  icon:
+    logo: material/notebook-outline
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - toc.follow
+plugins:
+  - search:
+      lang: [zh, en]
+  - blog:
+      blog_dir: blog
+      post_url_format: '{date}/{slug}'
+      archive_date_format: yyyy 年
+      archive_name: 文章归档
+      categories_name: 文章分类
+      pagination_per_page: 6
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+extra_css:
+  - stylesheets/extra.css
+nav:
+  - 首页:
+      - 欢迎: index.md
+      - 阅读指南: guide.md
+  - 文章:
+      - blog/index.md
+  - 知识库:
+      - notes/index.md
+      - 开发工具:
+          - Git 常用操作: notes/git.md
+          - Markdown 写作: notes/markdown.md
+  - 关于: about.md
+copyright: blog of devdede · 保持好奇，持续记录。
