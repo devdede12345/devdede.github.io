@@ -71,5 +71,7 @@ nav:
           - Markdown 写作: notes/markdown.md
   - CS300:
       - 课程笔记: cs300/index.md
+  - LeetCode:
+      - 刷题笔记: leetcode/index.md
   - 关于: about.md
 copyright: blog of devdede · 保持好奇，持续记录。
