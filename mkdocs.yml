@@ -69,5 +69,7 @@ nav:
       - 开发工具:
           - Git 常用操作: notes/git.md
           - Markdown 写作: notes/markdown.md
+  - CS300:
+      - 课程笔记: cs300/index.md
   - 关于: about.md
 copyright: blog of devdede · 保持好奇，持续记录。

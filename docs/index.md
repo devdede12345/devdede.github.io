@@ -1,14 +1,17 @@
-<div class="intro-label">LEARN / BUILD / SHARE</div>
-
 # blog of devdede
 
-<p class="intro-lead">把零散的发现，整理成可以再次找到的知识。</p>
+<p class="intro-lead">少年心气乃不可再生之物。</p>
 
-这里是一个个人博客，也是一份持续生长的知识库。记录解决问题的过程，保存值得反复阅读的笔记，让每一次实践都留下线索。
+我暂时还不知道这里可以写一些什么？也许会分享我的一些技术笔记。你也许可以在里面找到如下内容：
+
+- nvim 配置相关
+- 我在大学期间的笔记（二次整理版本）
+- 我的一些心事
+
 
 <div class="entry-links" markdown>
 
-[**阅读文章 →** <span>按时间浏览实践记录与思考</span>](blog/index.md){ .entry-link }
+[**阅读文章 →** <span>按时间浏览</span>](blog/index.md){ .entry-link }
 
 [**探索知识库 →** <span>按主题查找工具、方法与笔记</span>](notes/index.md){ .entry-link }
 
