@@ -74,5 +74,6 @@ nav:
   - LeetCode:
       - 刷题笔记: leetcode/index.md
       - 7. Reverse Integer: leetcode/7_reverseInteger.md
+      - 12. Integer to Roman: leetcode/12_IntegerToRoman.md
   - 关于: about.md
 copyright: blog of devdede · 保持好奇，持续记录。
