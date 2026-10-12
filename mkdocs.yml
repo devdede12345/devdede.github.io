@@ -73,5 +73,6 @@ nav:
       - 课程笔记: cs300/index.md
   - LeetCode:
       - 刷题笔记: leetcode/index.md
+      - 7. Reverse Integer: leetcode/7_reverseInteger.md
   - 关于: about.md
 copyright: blog of devdede · 保持好奇，持续记录。
