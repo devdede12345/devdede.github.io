@@ -78,4 +78,4 @@ slug: my-note
 - https://squidfunk.github.io/mkdocs-material/
 - https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
 
-仅参考界面组织方式，未复制 CTF Wiki 文章或品牌素材。本项目暂未指定内容许可证，可按需要自行补充。
+仅参考界面组织方式
