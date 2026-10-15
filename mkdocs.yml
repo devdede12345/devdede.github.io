@@ -74,6 +74,7 @@ nav:
   - LeetCode:
       - 刷题笔记: leetcode/index.md
       - 7. Reverse Integer: leetcode/7_reverseInteger.md
+      - 8. String to Integer (atoi): leetcode/8_StringtoInt.md
       - 12. Integer to Roman: leetcode/12_IntegerToRoman.md
       - 17. Phone Number Combination: leetcode/17_PhoneNumbercomb.md
   - 关于: about.md
