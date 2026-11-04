@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="480" viewBox="0 0 900 480" role="img" aria-labelledby="least-squares-title least-squares-description">
+  <title id="least-squares-title">Least squares as projection</title>
+  <desc id="least-squares-description">The blue target vector b is decomposed into its red fitted vector b-hat along the column space of A and the gold residual r = b minus b-hat. The fitted vector is the orthogonal projection of b onto the column space. A right-angle marker shows that the residual is perpendicular to the column space.</desc>
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M 0 0 L 10 4 L 0 8 Z" fill="#1f4e79"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M 0 0 L 10 4 L 0 8 Z" fill="#c5050c"/>
+    </marker>
+    <marker id="arrow-gold" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M 0 0 L 10 4 L 0 8 Z" fill="#9a6700"/>
+    </marker>
+    <style>
+      .math { font-family: "Times New Roman", Times, serif; font-size: 27px; fill: #111111; }
+      .vector { font-style: italic; font-weight: 700; }
+      .subspace { stroke: #4f4f4f; stroke-width: 5; stroke-linecap: round; }
+      .original { stroke: #1f4e79; stroke-width: 5; fill: none; marker-end: url(#arrow-blue); }
+      .projection { stroke: #c5050c; stroke-width: 5; fill: none; marker-end: url(#arrow-red); }
+      .residual { stroke: #9a6700; stroke-width: 5; fill: none; marker-end: url(#arrow-gold); }
+    </style>
+  </defs>
+  <rect width="900" height="480" fill="#ffffff"/>
+
+  <line x1="55" y1="365" x2="845" y2="365" class="subspace"/>
+  <text x="814" y="401" text-anchor="end" class="math" data-tex="\operatorname{col}(A)">col(<tspan font-style="italic">A</tspan>)</text>
+
+  <circle cx="135" cy="365" r="5" fill="#111111"/>
+  <line x1="135" y1="365" x2="565" y2="105" class="original"/>
+  <line x1="135" y1="365" x2="565" y2="365" class="projection"/>
+  <line x1="565" y1="365" x2="565" y2="105" class="residual"/>
+
+  <path d="M 565 335 L 595 335 L 595 365" fill="none" stroke="#111111" stroke-width="3"/>
+
+  <text x="330" y="195" class="math vector" data-tex="\mathbf{b}">b</text>
+  <text x="285" y="414" class="math" data-tex="\widehat{\mathbf{b}}=\operatorname{proj}_{\operatorname{col}(A)}(\mathbf{b})"><tspan class="vector">b&#x302;</tspan><tspan> = proj</tspan><tspan baseline-shift="sub" font-size="19">col(<tspan font-style="italic">A</tspan>)</tspan><tspan>(</tspan><tspan class="vector">b</tspan><tspan>)</tspan></text>
+  <text x="595" y="235" class="math" data-tex="\mathbf{r}=\mathbf{b}-\widehat{\mathbf{b}}"><tspan class="vector">r</tspan><tspan> = </tspan><tspan class="vector">b</tspan><tspan> − </tspan><tspan class="vector">b&#x302;</tspan></text>
+</svg>

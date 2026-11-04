@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="720" viewBox="0 0 760 720" role="img" aria-labelledby="title description">
+  <title id="title">Level curves and principal axes of a positive-definite quadratic form</title>
+  <desc id="description">Four nested elliptical level curves of q of x comma y equals 13 x squared minus 6 x y plus 5 y squared. The orthogonal principal axes are the normalized eigenvectors v prime 1 and v prime 2. The ellipses are shorter along v prime 1, whose eigenvalue is 14, and longer along v prime 2, whose eigenvalue is 4.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M 0 0 L 10 4 L 0 8 Z" fill="#171717"/>
+    </marker>
+    <style>
+      .grid { stroke: #dedede; stroke-width: 1.5; }
+      .coordinate-axis { stroke: #8a8a8a; stroke-width: 2; }
+      .frame { fill: none; stroke: #5f6368; stroke-width: 2.4; }
+      .tick { font-family: Arial, Helvetica, sans-serif; font-size: 18px; fill: #4b5563; }
+      .axis-label { font-family: "Times New Roman", Times, serif; font-size: 25px; font-style: italic; fill: #222222; }
+      .principal-axis { stroke: #171717; stroke-width: 2.8; marker-end: url(#arrow); }
+      .principal-label { font-family: "Times New Roman", Times, serif; font-size: 25px; font-weight: 700; font-style: italic; fill: #171717; }
+      .level { fill: none; stroke-width: 4; vector-effect: non-scaling-stroke; }
+      .legend-text { font-family: Arial, Helvetica, sans-serif; font-size: 18px; fill: #222222; }
+      .legend-title { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; letter-spacing: 0.5px; fill: #4b5563; }
+    </style>
+  </defs>
+
+  <rect width="760" height="720" fill="#ffffff"/>
+
+  <g aria-hidden="true">
+    <line x1="100" y1="62" x2="100" y2="638" class="grid"/>
+    <line x1="190" y1="62" x2="190" y2="638" class="grid"/>
+    <line x1="280" y1="62" x2="280" y2="638" class="grid"/>
+    <line x1="370" y1="62" x2="370" y2="638" class="coordinate-axis"/>
+    <line x1="460" y1="62" x2="460" y2="638" class="grid"/>
+    <line x1="550" y1="62" x2="550" y2="638" class="grid"/>
+    <line x1="640" y1="62" x2="640" y2="638" class="grid"/>
+
+    <line x1="82" y1="620" x2="658" y2="620" class="grid"/>
+    <line x1="82" y1="530" x2="658" y2="530" class="grid"/>
+    <line x1="82" y1="440" x2="658" y2="440" class="grid"/>
+    <line x1="82" y1="350" x2="658" y2="350" class="coordinate-axis"/>
+    <line x1="82" y1="260" x2="658" y2="260" class="grid"/>
+    <line x1="82" y1="170" x2="658" y2="170" class="grid"/>
+    <line x1="82" y1="80" x2="658" y2="80" class="grid"/>
+
+    <rect x="82" y="62" width="576" height="576" class="frame"/>
+
+    <text x="91" y="667" class="tick">−3</text>
+    <text x="363" y="667" class="tick">0</text>
+    <text x="632" y="667" class="tick">3</text>
+    <text x="51" y="627" class="tick">−3</text>
+    <text x="58" y="357" class="tick">0</text>
+    <text x="58" y="87" class="tick">3</text>
+    <text x="643" y="339" class="axis-label">x</text>
+    <text x="381" y="79" class="axis-label">y</text>
+  </g>
+
+  <!-- In principal-axis coordinates, q = 14 y_1^2 + 4 y_2^2. -->
+  <g transform="matrix(-85.3815 -28.4605 28.4605 -85.3815 370 350)">
+    <ellipse cx="0" cy="0" rx="0.5976" ry="1.1180" class="level" stroke="#7a3e9d"/>
+    <ellipse cx="0" cy="0" rx="0.8452" ry="1.5811" class="level" stroke="#2563eb"/>
+    <ellipse cx="0" cy="0" rx="1.1952" ry="2.2361" class="level" stroke="#00897b"/>
+    <ellipse cx="0" cy="0" rx="1.4639" ry="2.7386" class="level" stroke="#b7791f"/>
+  </g>
+
+  <g aria-label="Principal axes">
+    <line x1="370" y1="350" x2="114" y2="265" class="principal-axis"/>
+    <line x1="370" y1="350" x2="626" y2="435" class="principal-axis"/>
+    <line x1="370" y1="350" x2="455" y2="94" class="principal-axis"/>
+    <line x1="370" y1="350" x2="285" y2="606" class="principal-axis"/>
+
+    <text x="91" y="246" class="principal-label">v′<tspan baseline-shift="sub" font-size="18">1</tspan></text>
+    <text x="619" y="466" class="principal-label">−v′<tspan baseline-shift="sub" font-size="18">1</tspan></text>
+    <text x="463" y="88" class="principal-label">v′<tspan baseline-shift="sub" font-size="18">2</tspan></text>
+    <text x="250" y="630" class="principal-label">−v′<tspan baseline-shift="sub" font-size="18">2</tspan></text>
+  </g>
+
+  <g transform="translate(516 82)" aria-label="Level values">
+    <rect x="0" y="0" width="119" height="144" rx="8" fill="#ffffff" fill-opacity="0.94" stroke="#c8c8c8"/>
+    <text x="14" y="25" class="legend-title">LEVEL c</text>
+    <line x1="15" y1="48" x2="48" y2="48" stroke="#7a3e9d" stroke-width="4"/>
+    <text x="60" y="54" class="legend-text">5</text>
+    <line x1="15" y1="76" x2="48" y2="76" stroke="#2563eb" stroke-width="4"/>
+    <text x="60" y="82" class="legend-text">10</text>
+    <line x1="15" y1="104" x2="48" y2="104" stroke="#00897b" stroke-width="4"/>
+    <text x="60" y="110" class="legend-text">20</text>
+    <line x1="15" y1="132" x2="48" y2="132" stroke="#b7791f" stroke-width="4"/>
+    <text x="60" y="138" class="legend-text">30</text>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+# 前言
+
+!!! note "译文与来源"
+
+    本页依据 2026 年 11 月 3 日读取的官方 v0.2 源文件制作。数学术语保留英文；原书公式、代码、例题、活动、证明与解答保留。译稿使用机器辅助翻译并进行数学与排版检查，未经原作者审定。原作者：Jacob Denson、Kaitlyn Phillipson、Sebastien Roch。除原书另有注明外，遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)。 [阅读英文原文](https://math345-textbook.github.io/front-preface.html)。
+
+本课程是关于  linear  代数，以及与优化问题最相关的多变量微积分部分：给定一个取决于多个  parameters  的数量，找到最大化或最小化该数量的  parameters 。这些工具是数据科学的基础，人们通常通过选择  parameters  来构建数据模型，使模型最接近给定的数据集。该课程有一个反复出现的主题： linear 代数研究 linear maps ；通过用  linear maps  本地替换 nonlinear   functions  进行微积分研究；优化使用两者来解决数据问题。
+
+**The book is organized into seven units**: 第 1 单元介绍  vectors 、 matrices  和  linear maps 。第二单元研究 linear map 的解剖：系统、几何、冗余、 rank 和被遗忘的方向。第 3 单元开发 local linearization 、方向 derivatives 、critical point和 gradient descent 。第 4 单元开发  orthogonality 、 projection  和  least squares 。第 5 单元开发  eigenvalues 、 diagonalization 、 quadratic forms 、Hessians 和  least-squares  应用程序。第 6 单元开发  constrained optimization  和  Lagrange multipliers ，然后将约束  quadratic forms  应用于  principal component analysis  ( PCA ) 和  singular value decomposition  ( SVD )。第 7 单元使用  abstract vector spaces  和多项式近似来合成  projection 、 least squares 、 Taylor approximation  和  Gram-Schmidt 。
+
+**Applications**: 应用程序线程是有意重复出现的。  Vectors ，距离， dot products  在第 1 单元引入 embeddings ，最近邻， cosine similarity ；  dot products  通过第 4 单元中的  projection  和  least squares  以及第 5 单元中的  eigenvector  几何和  quadratic forms  返回。第 1 单元中的加权  linear combinations  预览  attention  并通过第 4 单元中的评分然后组合比较返回。  Linear maps  $\mathbf{x}\mapsto A\mathbf{x}$从第 1 单元开始，通过第 2 单元和第 3 单元返回。系统 $Ax=b$、零空间、 rank 、直线和平面以及  local linearization  连接第 2 单元和第 3 单元的解集、遗忘方向、切平面和灵敏度。 Projection  和  least squares  驱动第 4 单元中的回归，并在第 5 单元和第 7 单元中返回。  gradient descent 在第3单元组织 first-order optimization ；  eigenvalues 、 quadratic forms 、Hessians在第5单元组织二阶分析；  Lagrange multipliers 、 PCA 和 SVD 在第6单元组织 constraints 和 principal directions ；第 7 单元中的多项式  inner products  组织  Taylor approximation  和回归。Transformer 总结工作表重新审视  token   embeddings 、 attention  分数、 weighted averages 、 affine  层、 nonlinear  块、训练  loss 、梯度和低 rank 更新。该课程不是大型语言模型的课程。目标是学习在许多领域有用的数学工具：数据科学、优化、建模、数值计算、统计、工程和机器学习。
+
+如何利用**学习目标**：每个单元都以标记为 U1-LO1、U1-LO2 等的学习成果开始。每个结果都指定了学生应该能够在新问题中使用的技能。工具箱技能是支持这些结果的较小计算。活动、练习和实验室索引使用相同的标签来识别相关结果。例如，**学习目标**： U4-LO4 确定了第 4 单元  least-squares   residual  结果的工作。可选材料单独标识。
+
+**Outcome recurrence**:   Dot products 和 cosine similarity 首先出现在U1-LO1和U1-LO2中，然后通过 projection 、 least squares 、 eigenvector 几何和 quadratic forms 返回到单元4和5中。  Matrix - vector  产品和  composition  首先出现在 U1-LO4 和 U1-LO6 中，然后通过  linear maps 、 matrix  操作和  local linearization  返回单元 2 和 3。可到达的输出和零方向首先出现在 U2-LO3 和 U2-LO6 中，然后通过  least squares 、遗忘方向、 rank  和four fundamental subspaces返回到单元 4 和 6。梯度和 gradient descent 首先出现在第3单元中。 Eigenvalues 、 quadratic forms 和 Hessian 分类出现在第5单元中。 Projection 和 least squares 首先出现在U4-LO4和U4-LO5中，然后通过回归返回到第5、6和7单元中，  normal equations 、 PCA   reconstruction ，以及多项式近似。  Symmetric   quadratic forms  从 U5-LO4 通过约束极值、 maximum stretch  和  PCA  返回到 U6-LO4 和 U6-LO5。  SVD 首先出现在U6-LO6和U6-LO7中，将 orthonormal 输入和输出方向与 matrix 拉伸、 rank 、four fundamental subspaces和 PCA 分数连接起来。多项式 inner products 和 best approximation 首先出现在U7-LO3和U7-LO5中，并通过 Taylor approximation 、连续 least squares 和采样 least squares 最终合成。
+
+**Labs**: 这些笔记本是与教科书相链接的补充材料。实验室序列包括 Lab U1 对  vectors 、相似性、 attention  和  matrix  操作的操作； Lab U2 审核  linear map ； Lab U3 关于符号  derivatives 、 Jacobian   matrices 、 local linearization  和预测误差下降； Lab U4 回归为  projection ；实验室 U5 于 Hessian  eigenvalues 、 least squares ，并修复了 nonlinear  features ，并对第 3 单元 gradient descent 进行了简短回顾；  constraints 、 PCA 、 SVD  实验室 U6；以及 Lab U7 的多项式逼近。 Transformer Wrap-Up Lab 是 Transformer Wrap-Up Worksheet 附录中的一个扩展。详细的实验室索引出现在书的末尾。
+

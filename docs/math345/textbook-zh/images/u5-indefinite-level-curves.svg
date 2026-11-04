@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="720" viewBox="0 0 760 720" role="img" aria-labelledby="title description">
+  <title id="title">Level curves and principal axes of an indefinite quadratic form</title>
+  <desc id="description">Hyperbolic level curves of q of x comma y equals x squared plus 4 x y minus 2 y squared. Blue branches show q equals 5 and open along the principal axis v prime 1. Red branches show q equals negative 4 and open along v prime 2. Dashed lines show the zero level set and are asymptotes of both families.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M 0 0 L 10 4 L 0 8 Z" fill="#171717"/>
+    </marker>
+    <clipPath id="plot-clip">
+      <rect x="82" y="62" width="576" height="576"/>
+    </clipPath>
+    <style>
+      .grid { stroke: #dedede; stroke-width: 1.5; }
+      .coordinate-axis { stroke: #8a8a8a; stroke-width: 2; }
+      .frame { fill: none; stroke: #5f6368; stroke-width: 2.4; }
+      .tick { font-family: Arial, Helvetica, sans-serif; font-size: 18px; fill: #4b5563; }
+      .axis-label { font-family: "Times New Roman", Times, serif; font-size: 25px; font-style: italic; fill: #222222; }
+      .principal-axis { stroke: #171717; stroke-width: 2.8; marker-end: url(#arrow); }
+      .principal-label { font-family: "Times New Roman", Times, serif; font-size: 25px; font-weight: 700; font-style: italic; fill: #171717; }
+      .curve { fill: none; stroke-width: 4; vector-effect: non-scaling-stroke; stroke-linecap: round; stroke-linejoin: round; }
+      .asymptote { stroke: #777777; stroke-width: 2.2; stroke-dasharray: 8 7; }
+      .legend-text { font-family: Arial, Helvetica, sans-serif; font-size: 18px; fill: #222222; }
+      .legend-title { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; letter-spacing: 0.5px; fill: #4b5563; }
+    </style>
+  </defs>
+
+  <rect width="760" height="720" fill="#ffffff"/>
+
+  <g aria-hidden="true">
+    <line x1="100" y1="62" x2="100" y2="638" class="grid"/>
+    <line x1="190" y1="62" x2="190" y2="638" class="grid"/>
+    <line x1="280" y1="62" x2="280" y2="638" class="grid"/>
+    <line x1="370" y1="62" x2="370" y2="638" class="coordinate-axis"/>
+    <line x1="460" y1="62" x2="460" y2="638" class="grid"/>
+    <line x1="550" y1="62" x2="550" y2="638" class="grid"/>
+    <line x1="640" y1="62" x2="640" y2="638" class="grid"/>
+
+    <line x1="82" y1="620" x2="658" y2="620" class="grid"/>
+    <line x1="82" y1="530" x2="658" y2="530" class="grid"/>
+    <line x1="82" y1="440" x2="658" y2="440" class="grid"/>
+    <line x1="82" y1="350" x2="658" y2="350" class="coordinate-axis"/>
+    <line x1="82" y1="260" x2="658" y2="260" class="grid"/>
+    <line x1="82" y1="170" x2="658" y2="170" class="grid"/>
+    <line x1="82" y1="80" x2="658" y2="80" class="grid"/>
+
+    <line x1="241" y1="638" x2="499" y2="62" class="asymptote"/>
+    <line x1="82" y1="285" x2="658" y2="415" class="asymptote"/>
+    <rect x="82" y="62" width="576" height="576" class="frame"/>
+
+    <text x="91" y="667" class="tick">−3</text>
+    <text x="363" y="667" class="tick">0</text>
+    <text x="632" y="667" class="tick">3</text>
+    <text x="51" y="627" class="tick">−3</text>
+    <text x="58" y="357" class="tick">0</text>
+    <text x="58" y="87" class="tick">3</text>
+    <text x="643" y="339" class="axis-label">x</text>
+    <text x="381" y="79" class="axis-label">y</text>
+  </g>
+
+  <!-- In principal-axis coordinates, q = 2 y_1^2 - 3 y_2^2. -->
+  <g clip-path="url(#plot-clip)">
+    <g transform="matrix(80.4984 -40.2492 40.2492 80.4984 370 350)">
+      <polyline points="2.8629,-1.9487 2.5358,-1.6187 2.2659,-1.3252 2.0471,-1.0616 1.8744,-0.8219 1.7439,-0.6008 1.6528,-0.3931 1.5990,-0.1944 1.5811,0.0000 1.5990,0.1944 1.6528,0.3931 1.7439,0.6008 1.8744,0.8219 2.0471,1.0616 2.2659,1.3252 2.5358,1.6187 2.8629,1.9487" class="curve" stroke="#2563eb"/>
+      <polyline points="-2.8629,1.9487 -2.5358,1.6187 -2.2659,1.3252 -2.0471,1.0616 -1.8744,0.8219 -1.7439,0.6008 -1.6528,0.3931 -1.5990,0.1944 -1.5811,0.0000 -1.5990,-0.1944 -1.6528,-0.3931 -1.7439,-0.6008 -1.8744,-0.8219 -2.0471,-1.0616 -2.2659,-1.3252 -2.5358,-1.6187 -2.8629,-1.9487" class="curve" stroke="#2563eb"/>
+      <polyline points="-2.1347,2.0908 -1.7732,1.8519 -1.4517,1.6548 -1.1629,1.4950 -0.9004,1.3689 -0.6581,1.2736 -0.4307,1.2071 -0.2129,1.1677 0.0000,1.1547 0.2129,1.1677 0.4307,1.2071 0.6581,1.2736 0.9004,1.3689 1.1629,1.4950 1.4517,1.6548 1.7732,1.8519 2.1347,2.0908" class="curve" stroke="#dc2626"/>
+      <polyline points="2.1347,-2.0908 1.7732,-1.8519 1.4517,-1.6548 1.1629,-1.4950 0.9004,-1.3689 0.6581,-1.2736 0.4307,-1.2071 0.2129,-1.1677 0.0000,-1.1547 -0.2129,-1.1677 -0.4307,-1.2071 -0.6581,-1.2736 -0.9004,-1.3689 -1.1629,-1.4950 -1.4517,-1.6548 -1.7732,-1.8519 -2.1347,-2.0908" class="curve" stroke="#dc2626"/>
+    </g>
+  </g>
+
+  <g aria-label="Principal axes">
+    <line x1="370" y1="350" x2="611" y2="229" class="principal-axis"/>
+    <line x1="370" y1="350" x2="129" y2="471" class="principal-axis"/>
+    <line x1="370" y1="350" x2="491" y2="591" class="principal-axis"/>
+    <line x1="370" y1="350" x2="249" y2="109" class="principal-axis"/>
+
+    <text x="615" y="221" class="principal-label">v′<tspan baseline-shift="sub" font-size="18">1</tspan></text>
+    <text x="92" y="500" class="principal-label">−v′<tspan baseline-shift="sub" font-size="18">1</tspan></text>
+    <text x="497" y="618" class="principal-label">v′<tspan baseline-shift="sub" font-size="18">2</tspan></text>
+    <text x="207" y="101" class="principal-label">−v′<tspan baseline-shift="sub" font-size="18">2</tspan></text>
+  </g>
+
+  <g transform="translate(500 84)" aria-label="Curve key">
+    <rect x="0" y="0" width="139" height="112" rx="8" fill="#ffffff" fill-opacity="0.94" stroke="#c8c8c8"/>
+    <text x="14" y="25" class="legend-title">LEVEL SET</text>
+    <line x1="15" y1="49" x2="48" y2="49" stroke="#2563eb" stroke-width="4"/>
+    <text x="60" y="55" class="legend-text">c = 5</text>
+    <line x1="15" y1="78" x2="48" y2="78" stroke="#dc2626" stroke-width="4"/>
+    <text x="60" y="84" class="legend-text">c = −4</text>
+    <line x1="15" y1="101" x2="48" y2="101" class="asymptote"/>
+    <text x="60" y="107" class="legend-text">c = 0</text>
+  </g>
+</svg>

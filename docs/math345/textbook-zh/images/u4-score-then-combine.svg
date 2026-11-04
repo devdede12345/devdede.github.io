@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="360" viewBox="0 0 1000 360" role="img">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M 0 0 L 10 4 L 0 8 Z" fill="#1f4e79"/>
+    </marker>
+    <style>
+      .row-label { font-family: Arial, sans-serif; font-size: 25px; font-weight: 700; fill: #111111; }
+      .math { font-family: "Times New Roman", Times, serif; font-size: 31px; fill: #111111; }
+      .vector { font-style: italic; font-weight: 700; }
+      .arrow-label { font-family: Arial, sans-serif; font-size: 18px; fill: #3f3f3f; text-anchor: middle; }
+      .arrow { stroke: #1f4e79; stroke-width: 4; marker-end: url(#arrowhead); }
+      .guide { stroke: #d7d7d7; stroke-width: 2; }
+    </style>
+  </defs>
+  <rect width="1000" height="360" fill="#ffffff"/>
+  <line x1="28" y1="180" x2="972" y2="180" class="guide"/>
+
+  <text x="35" y="90" class="row-label">Projection</text>
+  <text x="230" y="90" class="math vector" text-anchor="middle" data-tex="\mathbf{x}">x</text>
+  <line x1="270" y1="80" x2="410" y2="80" class="arrow"/>
+  <text x="340" y="122" class="arrow-label">scores</text>
+  <text x="485" y="90" class="math" text-anchor="middle" data-tex="Q^T\mathbf{x}">
+    <tspan font-style="italic">Q</tspan><tspan baseline-shift="super" font-size="21">T</tspan><tspan class="vector">x</tspan>
+  </text>
+  <line x1="560" y1="80" x2="700" y2="80" class="arrow"/>
+  <text x="630" y="122" class="arrow-label">combine</text>
+  <text x="820" y="90" class="math" text-anchor="middle" data-tex="Q(Q^T\mathbf{x})">
+    <tspan font-style="italic">Q</tspan><tspan>(</tspan><tspan font-style="italic">Q</tspan><tspan baseline-shift="super" font-size="21">T</tspan><tspan class="vector">x</tspan><tspan>)</tspan>
+  </text>
+
+  <text x="35" y="250" class="row-label">Attention</text>
+  <text x="218" y="250" class="math vector" text-anchor="middle" data-tex="\mathbf{q}">q</text>
+  <line x1="255" y1="240" x2="365" y2="240" class="arrow"/>
+  <text x="310" y="282" class="arrow-label">scores</text>
+  <text x="425" y="250" class="math" text-anchor="middle" data-tex="K\mathbf{q}">
+    <tspan font-style="italic">K</tspan><tspan class="vector">q</tspan>
+  </text>
+  <line x1="480" y1="240" x2="585" y2="240" class="arrow"/>
+  <text x="532" y="282" class="arrow-label">weights</text>
+  <text x="640" y="250" class="math vector" text-anchor="middle" data-tex="\boldsymbol{\alpha}">α</text>
+  <line x1="685" y1="240" x2="800" y2="240" class="arrow"/>
+  <text x="742" y="282" class="arrow-label">combine</text>
+  <text x="880" y="250" class="math" text-anchor="middle" data-tex="\boldsymbol{\alpha}^T V">
+    <tspan class="vector">α</tspan><tspan baseline-shift="super" font-size="21">T</tspan><tspan font-style="italic"> V</tspan>
+  </text>
+</svg>

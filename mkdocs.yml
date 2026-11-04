@@ -43,6 +43,8 @@ plugins:
       categories_name: 文章分类
       pagination_per_page: 6
 markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
   - admonition
   - attr_list
   - md_in_html
@@ -56,6 +58,9 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 extra_css:
   - stylesheets/extra.css
 nav:
@@ -70,7 +75,155 @@ nav:
           - Git 常用操作: notes/git.md
           - Markdown 写作: notes/markdown.md
   - CS300:
-      - 课程笔记: cs300/index.md
+      - 课程概览: cs300/index.md
+      - 数组与对象:
+          - "01 课程导览与数组容量": cs300/lectures/lec01-welcome.md
+          - "02 数组、引用与测试": cs300/lectures/lec02-arrays.md
+          - "03 使用对象与包装类": cs300/lectures/lec03-using-objects.md
+          - "04 对象内存与拷贝": cs300/lectures/lec04-object-memory.md
+      - 异常处理:
+          - "05 异常与栈轨迹": cs300/lectures/lec05-exceptions.md
+          - "06 捕获异常与控制流": cs300/lectures/lec06-handlingexceptions.md
+          - "07 抛出异常与资源管理": cs300/lectures/lec07-throwingexceptions.md
+      - 类、封装与继承:
+          - "08 定义类与构造器": cs300/lectures/lec08-definingclasses.md
+          - "09 封装与防御性拷贝": cs300/lectures/lec09-encapsulation.md
+          - "10 类的设计与静态成员": cs300/lectures/lec10-designingclasses.md
+          - "11 继承与父类构造器": cs300/lectures/lec11-inheritance1.md
+          - "12 方法重写与内容相等": cs300/lectures/lec12-inheritance2.md
+          - "13 多态与抽象类": cs300/lectures/lec13-inheritance3.md
+      - 接口与泛型:
+          - "14 接口与 Comparable": cs300/lectures/lec14-interfaces.md
+          - "15 泛型方法与类型边界": cs300/lectures/lec15-genericmethods.md
+          - "16 泛型类与抽象数据类型": cs300/lectures/lec16-genericclasses.md
+      - 复杂度分析:
+          - "17 复杂度与增长阶": cs300/lectures/lec17-complexity.md
+          - "18 算法分析与隐藏成本": cs300/lectures/lec18-algorithmanalysis.md
+          - "19 最坏情况与渐近记号": cs300/lectures/lec19-worstcase.md
+          - "zyBooks 7：复杂度分析补充": cs300/complexity/zybooks7.md
+      - 递归:
+          - "20 递归与基本情况": cs300/lectures/lec20-recursion.md
+          - "21 递归追踪与成本分析": cs300/lectures/lec21-tracingrecursion.md
+          - "zyBooks 8：递归设计与调用栈": cs300/recursion/foundations.md
+          - "zyBooks 8：回溯与全排列": cs300/recursion/backtracking.md
+          - "zyBooks 8：递归树与二分查找": cs300/recursion/analysis.md
+      - 排序算法:
+          - 学习路线与复杂度速查: cs300/sorting/index.md
+          - 选择、插入与冒泡: cs300/sorting/basic.md
+          - 归并排序: cs300/sorting/merge.md
+          - 快速排序: cs300/sorting/quick.md
+          - 堆排序: cs300/sorting/heap.md
+          - 桶排序: cs300/sorting/bucket.md
+  - MATH345:
+      - 课程笔记: math345/index.md
+      - 第一章：向量、矩阵与线性映射: math345/chapter1.md
+      - 第二章：剖析线性映射: math345/chapter2.md
+      - 第三章：局部线性化与一阶优化: math345/chapter3.md
+      - 教材来源与许可: math345/sources.md
+      - math345 textbook 汉化版:
+          - 教材目录与阅读说明: math345/textbook-zh/index.md
+          - 从 AP Calculus BC 出发：数学桥梁: math345/textbook-zh/bc-bridge.md
+          - 第一章： vector、 matrix 与 linear map :
+              - 本章目录: math345/textbook-zh/1-index.md
+              - 1.1 vector : math345/textbook-zh/1-1.md
+              - 1.2 matrix : math345/textbook-zh/1-2.md
+              - 1.3 matrix-vector product 及 linear map : math345/textbook-zh/1-3.md
+              - 1.4 matrix multiplication 与映射复合: math345/textbook-zh/1-4.md
+              - 1.5 代码回顾: math345/textbook-zh/1-5.md
+              - 1.6 练习: math345/textbook-zh/1-6.md
+              - 1.7 本章要点: math345/textbook-zh/1-7.md
+          - 第二章：剖析 linear map :
+              - 本章目录: math345/textbook-zh/2-index.md
+              - 2.1 理解 linear map：预览: math345/textbook-zh/2-1.md
+              - 2.2 linear system : math345/textbook-zh/2-2.md
+              - 2.3 subspace : math345/textbook-zh/2-3.md
+              - 2.4 linear independence、 basis 与 dimension : math345/textbook-zh/2-4.md
+              - 2.5 inverse matrix 与 determinant : math345/textbook-zh/2-5.md
+              - 2.6 代码回顾: math345/textbook-zh/2-6.md
+              - 2.7 练习: math345/textbook-zh/2-7.md
+              - 2.8 本章要点: math345/textbook-zh/2-8.md
+          - 第三章： local linearization 与 first-order optimization :
+              - 本章目录: math345/textbook-zh/3-index.md
+              - 3.1 general function 与 domain : math345/textbook-zh/3-1.md
+              - 3.2 one-parameter map 与变化: math345/textbook-zh/3-2.md
+              - 3.3 partial derivative、 gradient 与 derivative matrix : math345/textbook-zh/3-3.md
+              - 3.4 local linearization 与 differentiability : math345/textbook-zh/3-4.md
+              - 3.5 chain rule 与 matrix multiplication : math345/textbook-zh/3-5.md
+              - 3.6 directional derivative、 critical point 与 gradient descent : math345/textbook-zh/3-6.md
+              - 3.7 代码回顾: math345/textbook-zh/3-7.md
+              - 3.8 练习: math345/textbook-zh/3-8.md
+              - 3.9 本章要点: math345/textbook-zh/3-9.md
+          - 第四章： orthogonality 与 least squares :
+              - 本章目录: math345/textbook-zh/4-index.md
+              - 4.1 orthogonality 与 orthogonal basis : math345/textbook-zh/4-1.md
+              - 4.2 orthogonal projection : math345/textbook-zh/4-2.md
+              - 4.3 作为 projection 的 least squares : math345/textbook-zh/4-3.md
+              - 4.4 QR factorization 与 least squares : math345/textbook-zh/4-4.md
+              - 4.5 代码回顾: math345/textbook-zh/4-5.md
+              - 4.6 练习: math345/textbook-zh/4-6.md
+              - 4.7 本章要点: math345/textbook-zh/4-7.md
+          - "第五章：eigenvalues 与 second-order optimization":
+              - "本章目录": math345/textbook-zh/5-index.md
+              - "5.1 eigenvalues、eigenvectors 与 diagonalization": math345/textbook-zh/5-1.md
+              - "5.2 symmetric matrices 与 orthogonal diagonalization": math345/textbook-zh/5-2.md
+              - "5.3 quadratic forms 与 definiteness": math345/textbook-zh/5-3.md
+              - "5.4 Hessian 与 second derivative test": math345/textbook-zh/5-4.md
+              - "5.5 重新理解 least squares": math345/textbook-zh/5-5.md
+              - "5.6 代码回顾": math345/textbook-zh/5-6.md
+              - "5.7 练习": math345/textbook-zh/5-7.md
+              - "5.8 本章要点": math345/textbook-zh/5-8.md
+          - "第六章：constrained optimization 与 Lagrange multipliers":
+              - "本章目录": math345/textbook-zh/6-index.md
+              - "6.1 closed bounded region 上的 absolute extrema": math345/textbook-zh/6-1.md
+              - "6.2 Lagrange multipliers": math345/textbook-zh/6-2.md
+              - "6.3 quadratic forms 与 maximum stretch": math345/textbook-zh/6-3.md
+              - "6.4 principal component analysis（PCA）": math345/textbook-zh/6-4.md
+              - "6.5 singular value decomposition（SVD）": math345/textbook-zh/6-5.md
+              - "6.6 代码回顾": math345/textbook-zh/6-6.md
+              - "6.7 练习": math345/textbook-zh/6-7.md
+              - "6.8 本章要点": math345/textbook-zh/6-8.md
+          - "第七章：abstract vector spaces 与 polynomial approximation":
+              - "本章目录": math345/textbook-zh/7-index.md
+              - "7.1 abstract vector spaces": math345/textbook-zh/7-1.md
+              - "7.2 inner product spaces": math345/textbook-zh/7-2.md
+              - "7.3 polynomial spaces 与全课程的联系": math345/textbook-zh/7-3.md
+              - "7.4 代码回顾": math345/textbook-zh/7-4.md
+              - "7.5 练习": math345/textbook-zh/7-5.md
+              - "7.6 本章要点": math345/textbook-zh/7-6.md
+          - 附录与全书资料:
+              - "附录 A：Transformer 综合练习": math345/textbook-zh/app-transformer-index.md
+              - "附录 B：NumPy 与 SymPy 计算速查":
+                  - "目录": math345/textbook-zh/app-computation-index.md
+                  - "B.1 如何阅读计算代码": math345/textbook-zh/app-computation-1.md
+                  - "B.2 NumPy arrays、vectors、matrices 与 shapes": math345/textbook-zh/app-computation-2.md
+                  - "B.3 Indexing 与 slicing": math345/textbook-zh/app-computation-3.md
+                  - "B.4 逐元素运算与 linear algebra 运算": math345/textbook-zh/app-computation-4.md
+                  - "B.5 Dot products、norms、distances 与 cosine similarity": math345/textbook-zh/app-computation-5.md
+                  - "B.6 排序与排名": math345/textbook-zh/app-computation-6.md
+                  - "B.7 Reductions、axes 与逐 row 计算": math345/textbook-zh/app-computation-7.md
+                  - "B.8 构造常用 arrays 与 design matrices": math345/textbook-zh/app-computation-8.md
+                  - "B.9 数值检查与 roundoff": math345/textbook-zh/app-computation-9.md
+                  - "B.10 NumPy linear algebra 命令": math345/textbook-zh/app-computation-10.md
+                  - "B.11 SymPy 符号计算": math345/textbook-zh/app-computation-11.md
+                  - "B.12 Lab 中常用的 Python 写法": math345/textbook-zh/app-computation-12.md
+                  - "B.13 Boolean masks、复制与 attention 辅助函数": math345/textbook-zh/app-computation-13.md
+                  - "B.14 可选：绘图": math345/textbook-zh/app-computation-14.md
+                  - "B.15 命令速查表": math345/textbook-zh/app-computation-15.md
+              - "附录 C：应用练习解答提要":
+                  - "目录": math345/textbook-zh/app-solutions-index.md
+                  - "C.1 第1章：应用、几何与计算题解答": math345/textbook-zh/app-solutions-1.md
+                  - "C.2 第2章：应用、几何与计算题解答": math345/textbook-zh/app-solutions-2.md
+                  - "C.3 第3章：应用、几何与计算题解答": math345/textbook-zh/app-solutions-3.md
+                  - "C.4 第4章：应用、几何与计算题解答": math345/textbook-zh/app-solutions-4.md
+                  - "C.5 第5章：应用、几何与计算题解答": math345/textbook-zh/app-solutions-5.md
+                  - "C.6 第6章：应用、几何与计算题解答": math345/textbook-zh/app-solutions-6.md
+                  - "C.7 第7章：应用、几何与计算题解答": math345/textbook-zh/app-solutions-7.md
+              - "参考文献": math345/textbook-zh/app-references-index.md
+              - "Lab 索引": math345/textbook-zh/app-labs-index.md
+              - "前言": math345/textbook-zh/front-preface.md
+              - "参与作者": math345/textbook-zh/front-authors.md
+              - "来源与许可": math345/textbook-zh/front-sources.md
+              - "版权与许可": math345/textbook-zh/front-license.md
   - LeetCode:
       - 刷题笔记: leetcode/index.md
       - 7. Reverse Integer: leetcode/7_reverseInteger.md
