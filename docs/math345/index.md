@@ -1,5 +1,7 @@
 # MATH345
 
+[Cheatsheet：公式速查](cheatsheet.md)
+
 ## 课程笔记
 
 | 章节 | 内容 |

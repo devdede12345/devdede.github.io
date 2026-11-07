@@ -116,6 +116,7 @@ nav:
           - 桶排序: cs300/sorting/bucket.md
   - MATH345:
       - 课程笔记: math345/index.md
+      - Cheatsheet: math345/cheatsheet.md
       - 第一章：向量、矩阵与线性映射: math345/chapter1.md
       - 第二章：剖析线性映射: math345/chapter2.md
       - 第三章：局部线性化与一阶优化: math345/chapter3.md
