@@ -1,0 +1,15 @@
+{# Enable content pages by default; front matter can override either choice. #}
+{% set source = page.file.src_uri %}
+{% set default_comments = source != 'index.md' and not source.endswith('/index.md') %}
+{% if page.meta.get('comments', default_comments) %}
+<section class="comments" aria-labelledby="__comments">
+  <h2 id="__comments">评论</h2>
+  <div class="giscus"
+       data-repo="{{ config.extra.giscus.repo | e }}"
+       data-repo-id="{{ config.extra.giscus.repo_id | e }}"
+       data-category="{{ config.extra.giscus.category | e }}"
+       data-category-id="{{ config.extra.giscus.category_id | e }}"
+       data-term="{{ page.meta.get('comment_id', source) | e }}"></div>
+  <noscript>请启用 JavaScript 以加载评论。</noscript>
+</section>
+{% endif %}

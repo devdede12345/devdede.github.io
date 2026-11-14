@@ -72,6 +72,22 @@ slug: my-note
 
 日期请替换成实际发布日期。删除示例文章时，同时更新首页指向它的链接。
 
+## 评论（Giscus）
+
+评论使用本仓库的 GitHub Discussions / Announcements 分类，配置位于
+`mkdocs.yml` 的 `extra.giscus`，模板位于 `overrides/partials/comments.html`。
+首次启用需在 https://github.com/apps/giscus 安装 Giscus，并授权此仓库；
+仓库须保持公开且开启 Discussions。读者登录 GitHub 后即可发表评论，
+首次评论或表情反应会自动创建对应讨论，管理员可在 GitHub Discussions 管理。
+
+默认在文章和笔记等内容页显示评论，首页和各目录的 `index.md` 不显示。
+可通过页面 front matter 的 `comments: true` 或 `comments: false` 单独覆盖。
+评论区支持中文、延迟加载，并跟随网站深浅色切换。
+
+讨论按 Markdown 源文件路径严格匹配，不受站点域名、文章标题或博客发布日期影响。
+移动文件前，可在 front matter 中设置 `comment_id` 为原来的源文件路径
+（例如 `blog/posts/hello-world.md`），保持原有评论关联。
+
 ## 参考
 
 - https://github.com/ctf-wiki/ctf-wiki
